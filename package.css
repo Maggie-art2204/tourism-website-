@@ -1,0 +1,137 @@
+*
+{
+    padding:0;
+    margin:0;
+ 
+    
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+  body
+  {
+      background-image: url('bg.png');
+      background-size: cover;
+      background-position: fixed;
+      display: fixed;
+      
+      
+  }  
+  .heading {
+    font-size: 4rem; 
+    text-align: center; 
+    margin-bottom: 3rem; 
+    color: #10221b; 
+}
+
+.packages {
+    background: transparent;
+  }
+  
+  .packages .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(32rem, 1fr)) [auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .packages .box-container .box {
+    text-align: center;
+    background: #cf961a;
+    border: 0.2rem solid #10221b;
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+  }
+  
+  .packages .box-container .box:hover {
+    background: #10221b;
+  }
+  
+  .packages .box-container .box:hover .content > * {
+    color: #fff;
+  }
+  
+  .packages .box-container .box:hover .btn {
+    border-color: #fff;
+  }
+  
+  .packages .box-container .box:hover .btn:hover {
+    background: #df350a;
+    color: #10221b;
+  }
+  
+  .packages .box-container .box .image {
+    height: 25rem;
+    overflow: hidden;
+    padding: 2rem;
+    padding-bottom: 0;
+    border-radius: 0.5rem;
+  }
+  
+  .packages .box-container .box .image img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+  
+  .packages .box-container .box .content {
+    padding: 2rem;
+  }
+  
+  .packages .box-container .box .content h3 {
+    font-size: 2rem;
+    color: #10221b;
+  }
+  
+  .packages .box-container .box .content p {
+    font-size: 1.5rem;
+    color: #10221b;
+    padding: 1rem 0;
+    line-height: 2;
+  }
+  
+  .packages .box-container .box .content .price {
+    font-size: 2rem;
+    color: #219150;
+  }
+  .packages .box-container .box .btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 1rem 2.5rem;  
+    font-size: 2rem;       
+    color: #10221b;
+    border: 0.2rem solid #10221b;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    text-decoration: none; 
+}
+.packages .box-container .box .btn:hover {
+    background-color: #10221b; 
+    color: #fff;              
+}
+button {
+  width: 150px;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  margin-left: 45%;
+  border:1px ;
+  border-radius: 5px;
+  background: #cf961a;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s; 
+  display: inline-block; 
+}
+button:hover {
+  background: #df350a; 
+}
